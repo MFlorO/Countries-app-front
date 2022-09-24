@@ -104,50 +104,52 @@ export function getActivities() {
 //         ##################       delete_activities         #################
 
 export function deleteActivities(id) {
-  return async function (dispatch) {
-    try {
-      await axios.delete(`${baseURL}/activities/${id}`);
-      return dispatch({
-        type: delete_activities
+  return function (dispatch) {
+    axios
+      .delete(`${baseURL}/activities/${id}`)
+      .then((response) => {
+        dispatch({ type: delete_activities})
+        dispatch(getActivities())
       })
-    } catch (error) {
-      console.log("deleteActivities", error)
-    }
-  }
+      .catch((error) => {
+        console.log("deleteActivities", error)
+      });
+  };
 }
-
 
 //         ##################       truncate_activities         #################
 
-export function truncateActivities(id) {
-  return async function (dispatch) {
-    try {
-      await axios.delete(`${baseURL}/activities/`);
-      return dispatch({
-        type: truncate_activities
-      })
-    } catch (error) {
-      console.log("deleteActivities", error)
-    }
-  }
-}
 
+export function truncateActivities() {
+  return function (dispatch) {
+    axios
+      .delete(`${baseURL}/activities/`)
+      .then((response) => {
+        dispatch({ type: truncate_activities})
+        dispatch(getActivities())
+      })
+      .catch((error) => {
+        console.log("truncateActivities", error)
+      });
+  };
+}
 
 
 // #################### update_activities ########################
 
 
-export function updateActivities() {
-  return async function (dispatch) {
-    try {
-      await axios.put(`${baseURL}/activities/`);
-      return dispatch({
-        type: update_activities
+export function updateActivities(body) {
+  return function (dispatch) {
+    axios
+      .put(`${baseURL}/activities/`, body)
+      .then((response) => {
+        dispatch({ type: update_activities})
+        dispatch(getActivities())
       })
-    } catch (error) {
-      console.log("update_activities", error)
-    }
-  }
+      .catch((error) => {
+        console.log("updateActivities", error)
+      });
+  };
 }
 
 

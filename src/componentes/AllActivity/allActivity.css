@@ -59,11 +59,14 @@
     text-shadow: 0px 0px 0px  
   }
 
+  .container-allactivity{
+    width: 40rem;
+    margin-left: 1rem;
+  }
 
   .lista-items-1{
     display: flex;
     align-items: flex-start;
-    margin-left: -8rem;
     margin-top: 20px;
   }
 

@@ -23,35 +23,20 @@ function AllActivity() {
 
   
 
-   const idCountry = activities.countries?.map( a => {
-    return a && a.id;
-   })
-
-
-
   const [input, setInput] = useState({
     activityId: activities.id,
     name: activities.name,
     difficulty: activities.difficulty,
     duration: activities.duration,
     seassion: activities.seassion,
-    id: idCountry, //idCountries
+    id: activities.countries, //idCountries
   });
-
-
-
-
-
 
 
   useEffect(() => {
     dispatch(getActivities());
 
   }, [dispatch]);
-
-
-
-
 
 
 
@@ -66,7 +51,16 @@ function AllActivity() {
 
   const HandleOpenModal = (registro) => {
     setModal(true);
-    setInput(registro);
+    setInput({    
+      activityId: registro.id,
+      name: registro.name,
+      difficulty: registro.difficulty,
+      duration: registro.duration,
+      seassion: registro.seassion,
+      id: registro.countries?.map( a => {
+       return a && a.id;
+      }) //idCountries
+    })
   };
 
 
@@ -91,7 +85,6 @@ function AllActivity() {
           icon: "success",
         });
         dispatch(deleteActivities(id));
-        window.location.reload(); //refresca la pagina despues de borrar. Buena practica????
       } else {
         swal("Your activities is safe!");
       }
@@ -115,7 +108,7 @@ function AllActivity() {
             icon: "success",
           });
           dispatch(truncateActivities());
-          window.location.reload(); //refresca la pagina despues de borrar
+          // window.location.reload(); //refresca la pagina despues de borrar
         } else {
           swal("Your activities is safe!");
         }
@@ -142,7 +135,7 @@ function AllActivity() {
           Create new activity
         </button>
 
-        <div>
+        <div className="container-allactivity">
           <thead className="lista-allactivity">
             <tr className="lista-items-1">
               <th className="lista-items-1-1-1">Id</th>

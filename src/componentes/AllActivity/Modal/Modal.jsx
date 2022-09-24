@@ -1,8 +1,8 @@
 import React, {useEffect} from 'react'
 import { useSelector, useDispatch } from "react-redux";
 import {  getAllCountries, updateActivities } from "../../../redux/actions/index.js";
-// import {useHistory} from "react-router-dom";
 import "./modal.css"
+import Swal from "sweetalert2";
 
 
 
@@ -12,7 +12,6 @@ import "./modal.css"
 
 
 function Modal({HandleCloseModal, input, setInput}) {
-    // const history = useHistory();
     const dispatch = useDispatch();
     const countries = useSelector((state) => state.countriesAll);
 
@@ -23,8 +22,7 @@ function Modal({HandleCloseModal, input, setInput}) {
   
     
   const randomSeassion = ['Summer', "Autunm" , 'Winter', 'Spring']
-
-
+  
 
   function handleChange(event) {
 
@@ -50,12 +48,20 @@ function Modal({HandleCloseModal, input, setInput}) {
 
     function handleSubmit(evento){
       evento.preventDefault();
-
       dispatch(updateActivities(input));
+      HandleCloseModal(false)
+      Swal.fire({
+        icon: "success",
+        title: "Good job!",
+        text: "You edit a activity!",
+        showConfirmButton: true,
+        color: "black",
+        confirmButtonColor: "#5aa5a5ed",
+    });
+
     }
 
     
-  
 
 
 
