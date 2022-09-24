@@ -1,0 +1,12 @@
+
+
+.loading{
+    position: absolute;
+    top: 40%;
+    left: 45%
+}
+
+.loading img{
+    height: 170px;
+    width: 170px;
+}

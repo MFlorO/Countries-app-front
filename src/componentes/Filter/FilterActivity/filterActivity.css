@@ -1,0 +1,62 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+.filter-activity {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-p {
+  font-size: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.filter-select {
+  border-radius: 8px;
+}
+
+
+
+
+/* RESPONSIVEEEEEEEEE */
+
+/* TABLET */
+@media screen and (max-width: 760px) {
+
+  .filter-p {
+    font-size: 8px;
+  }
+
+}
+
+@media screen and (max-width: 460px) {
+
+
+  .filter-p {
+    font-size: 8px;
+    text-align: center;
+  }
+
+  .filter-select {
+    width: 100px;
+  }
+
+}
+
+@media screen and (max-width: 360px) {
+
+
+  .filter-p {
+    margin-top: 25px;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .filter-select {
+    width: 170px;
+  }
+}

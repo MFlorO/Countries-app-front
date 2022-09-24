@@ -1,0 +1,209 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+
+
+.form{
+  height: 100vh;
+  width:  100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  background-color: rgba(255, 252, 252, 0.91);;
+}
+
+
+.titulo-form{
+  font-size: 40px;
+  font-family: 'PT Sans', sans-serif;
+  text-shadow: 0px 0px 5px #5aa5a5ed;
+  margin-top: 120px;
+  margin-bottom: 70px;
+}
+
+
+.form-item{
+  margin-top: -60px;
+  padding-top: 1rem;
+  width:  30rem;
+  height: 21rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+
+.labels{
+  color: black;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-top: 22px;
+}
+
+
+.input-duration{
+  padding-top: 8px;
+  padding-bottom: 8px;
+  height: 50rem;
+}
+
+.lista-container{
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
+}
+
+.lista{
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #398181;
+  font-weight: 900px;
+  width: 300px;
+  margin-top: 3px;
+  list-style: none;
+}
+
+.boton-lista{
+  border: 0px;
+  background-color: transparent;
+}
+
+
+
+
+input:focus{
+  outline-color: #398181; 
+  box-shadow: 0px 2px 8px #619292ef;
+}
+
+
+
+input.danger {
+  border: 2px solid red;
+  color: red
+}
+
+p.danger {
+  margin:1px;
+  color: red;
+  font-size: 10px;
+}
+
+
+
+.crear{
+  position: absolute;
+  border: 2px  #398181;
+  background-color: #398181f8;
+  height: 50px;
+  width: 100px;
+  left: 50rem;
+  top: 40rem;
+  text-shadow: 0px 0px 4px white;
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 800px ;
+  border-radius: 20%;
+}
+
+
+
+.crear:hover{
+  box-shadow: 0px 0px 8px #619292cf;
+  border: 2px solid #398181;
+  background-color: #398181f8;
+  font-weight: 800px ;
+  text-shadow: 0px 0px 0px  
+}
+
+
+.crear:disabled{
+  
+    position: absolute;
+    border: 2px  #656c6cf8;
+    background-color: #656c6cf8;
+    box-shadow: 0px 0px 8px none;
+    height: 50px;
+    width: 100px;
+    right: 44rem;
+    top: 40rem;
+    text-shadow: 0px 0px 4px white;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 800px ;
+    border-radius: 20%;
+  
+}
+
+
+
+
+
+
+
+                 /* RESPONSIVEEEEEEEEE */
+
+/* TABLET */
+
+@media screen and (max-width: 760px){ 
+  
+  
+.form{
+  height: 100vh;
+  width:  100vw;
+}
+
+
+.titulo-form{
+  font-size: 20px;
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+
+
+.form-item{
+  margin-top: -35px;
+  width:  20rem;
+  height: 11rem;
+}
+
+
+.labels{
+  font-size: 10px;
+  margin-top: 11px;
+}
+
+
+
+
+.lista{
+  font-size: 10px;
+  width: 100px;
+  margin-top: 60px;
+} 
+
+
+
+.crear{
+  position: absolute;
+  height: 50px;
+  width: 100px;
+  right: 60rem;
+  top: 20px;
+  font-size: 15px;
+} 
+
+
+  
+}
+
+
+@media screen and (max-width: 600px) {
+
+}

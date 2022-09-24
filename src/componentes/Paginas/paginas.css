@@ -1,0 +1,95 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+
+.paginas{
+    height: 20px;
+    width: 75vw;
+    margin-top: 10px;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    display: flex;  
+    align-items: center;
+    align-content: center;
+    justify-content:flex-end;
+    gap: 10px;
+}
+
+.boton-anterior{
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer
+}
+
+
+.icono-anterior{
+ cursor: pointer;
+}
+
+.boton-siguiente{
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer
+}
+
+
+
+.input-paginas{
+    width: 50px;
+    height: 25px;
+    box-shadow: 2px 2px 4px #82a3a3cf ;
+    border: 0px
+}
+
+.input-paginas:focus{
+    outline: none; 
+    box-shadow: 0px 2px 8px #619292ef;
+}
+
+.maximo {
+    margin-top: 6px;
+    margin-left: 3px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 14px;
+}
+
+
+
+
+
+                   /* RESPONSIVEEEEEEEEE */
+
+/* TABLET */
+@media screen and (max-width: 760px){
+    .paginas{
+        margin-right: 40px ;
+        margin-top: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 460px){
+    .paginas{
+        margin-right: 130px ;
+        margin-top: 20px;
+    }
+    
+}
+
+
+@media screen and (max-width: 360px){
+    .paginas{
+        margin-left: 200px ;
+        margin-top: 20px;
+    }
+    
+}

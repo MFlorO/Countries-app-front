@@ -1,0 +1,18 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.error{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.error-img{
+    position: absolute;
+    top: 5rem
+}

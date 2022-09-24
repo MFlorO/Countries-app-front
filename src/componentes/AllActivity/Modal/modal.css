@@ -1,0 +1,115 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.form-allActivity{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.888);
+    box-shadow: 4px 4px 6px #66aeaeec ;
+    backdrop-filter: blur(10px);
+    border: solid 3px #3E8484;
+    top: 7rem;
+    width: 50vw;
+    height: 80vh;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.items-form-allActivity{
+    margin-top: 40px;
+    width:  45rem;
+    height: 28rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+  
+  .labels-all-a{
+    color: black;
+    font-size: 23px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 15px;
+  }
+  
+
+  .input-all-a{
+    text-align: center;
+    width: 20rem;
+    font-size: 18px;
+    color: #398181;
+    font-weight: bolder;
+  }
+  
+  .input-all-a-duration{
+    text-align: center;
+    width: 20rem;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    height: 30rem;
+    color: #398181;
+    font-weight: bolder;
+    font-size: 15px;
+  }
+
+  .input-all-a-seassion{
+    text-align: center;
+    width: 20rem;
+    color: #398181;
+    font-weight: bolder;
+    font-size: 15px;
+  }
+
+
+  .input-all-a-seassion-1{
+    color: #398181;
+  }
+
+
+  .botones-all-a{
+  display: flex;
+  margin-top: 70px;
+  }
+
+  .button-all-a-editar{
+    border: 2px solid #198754;
+    background-color: white;
+    height: 50px;
+    width: 80px;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder ;
+    color: #198754;
+  }
+
+  .button-all-a-editar:hover{
+    box-shadow: 0px 0px 8px #145829f8;
+    border: 2px solid #198754;
+    background-color: #198754;
+    color:white
+  }
+
+  .button-all-a-cancelar{
+    border: 2px solid #d82c2cf8;
+    background-color: white;
+    height: 50px;
+    width: 85px;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder ;
+    margin-left: 10px;
+    color: #d82c2cf8;
+  }
+
+  .button-all-a-cancelar:hover{
+    box-shadow: 0px 0px 6px #913131f8;
+    border: 2px solid #d82c2cf8;
+    background-color: #d82c2cf8;
+    color: white
+  }

@@ -1,0 +1,11 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+  
+.create{
+    background-image: url("../Landing/imagenes/create2.jpg");
+    background-size: cover;
+}

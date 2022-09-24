@@ -1,0 +1,142 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+.filter {
+    margin-top: 60px;
+    padding-left: 10px;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.filter-conteiner {
+    padding: 50px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    background-color: #818484b7;
+    box-shadow: 4px 4px 6px #82a3a3cf;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    backdrop-filter: blur(10px);
+    font-weight: bolder;
+    border-radius: 10px;
+    gap: 30px;
+}
+
+.filter-conteiner:hover {
+    box-shadow: 0px 0px 10px 10px #82a3a3cf;
+}
+
+
+.boton-reset-filter {
+    position: absolute;
+    cursor: pointer;
+    top: 7rem;
+    left: 22rem;
+    height: 20px;
+    width: 80px;
+    color: black;
+    border: 3px solid #398181b3;
+    background-color: #398181e6;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+
+
+
+
+/* RESPONSIVEEEEEEEEE */
+
+/* TABLET */
+@media screen and (max-width: 760px) {
+
+    .filter {
+        margin-top: 80px;
+        padding-left: 3px;
+        height: 5%;
+    }
+
+    .filter-conteiner {
+        padding: 30px;
+        margin-top: 15px;
+        gap: 15px;
+    }
+
+    .boton-reset-filter {
+        top: 4.5rem;
+        left: 13rem;
+        height: 15px;
+        width: 60px;
+        font-size: 10px;
+    }
+
+
+}
+
+
+
+
+@media screen and (max-width: 460px) {
+
+    .filter {
+        margin-top: 70px;
+        margin-left: 15px;
+    }
+
+    .filter-conteiner {
+        padding: 20px;
+        gap: 12px;
+    }
+
+    .boton-reset-filter {
+        height: 14px;
+        width: 55px;
+        top: 3.5rem;
+        font-size: 9px;
+    }
+}
+
+
+
+@media screen and (max-width: 360px) {
+
+    .filter {
+        height: 10%;
+        margin-top: 110px;
+        margin-left: 50px;
+        margin-bottom: 60px;
+        display: flex;
+        align-items: center;
+        align-content: center;
+      
+    }
+
+    .filter-conteiner {
+        flex-direction: column;
+        padding: 25px;
+        gap: 0px;
+    }
+
+    .boton-reset-filter {
+        height: 35px;
+        width: 80px;
+        left: 5rem;
+        top: 0.3rem;
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (max-width: 260px) {}

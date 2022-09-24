@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,500;1,700&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+.navBar{
+    position: absolute;
+    height: 8.5vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #818484b7;
+    box-shadow: 2px 2px 4px #82a3a3cf ;
+    backdrop-filter: blur(10px);
+    border: 0px
+}
+
+
+/* .search{
+   SIGO EN EL COMPONENTE "SEARCH".
+} */
+
+
+.flexboxitems{
+    margin: 2px;
+    margin-left: 20px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: black;
+}
+
+a{
+    text-decoration:none;
+}
+
+.nav-h3{
+    font-family: 'PT Sans', sans-serif;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.nav-h3:hover{
+    text-shadow: 0px 0px 5px #5aa5a5ed;
+}
+
+.flexboxitems1{
+    color:black;
+    margin-left: 90px;
+    margin-right: 130px;
+}
+
+.flexboxitems1:hover{
+    box-shadow: 0 5px 40px #60a7a7d9;
+    border-radius: 90%;
+}
+
+
+
+
+                   /* RESPONSIVEEEEEEEEE */
+
+/* TABLET */
+@media screen and (max-width: 760px){
+    .navBar{
+        height: 8.5vh;
+    }
+
+    .flexboxitems{
+        width: 80%;
+    }
+    
+    .nav-h3{
+        font-size: 12px;
+    }
+    
+    .flexboxitems1{
+        margin-left: 90px;
+        margin-right: 20px;
+    }
+    
+}
+
+
+@media screen and (max-width: 460px) {
+    .navBar{
+        height: 9vh;
+        width: 120%;
+    }
+
+    .flexboxitems{
+        width: 70%;
+    }
+    
+    .nav-h3{
+        font-size: 9px;
+    }
+    
+    .flexboxitems1{
+        margin-left: 40px;
+        margin-right: 10px;
+    }
+    
+  }
+
+
+  
+@media screen and (max-width: 360px) {
+    .navBar{
+        height: 9vh;
+        width: 100%;
+    }
+
+    .flexboxitems{
+        width: 80%;
+    }
+    
+    .nav-h3{
+        font-size: 9px;
+    }
+    
+    .flexboxitems1{
+        margin-left: 40px;
+        margin-right: 10px;
+    }
+    
+  }

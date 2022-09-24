@@ -1,0 +1,142 @@
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+.mylist-cointeiner{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.titulo-mylist{
+    position: absolute; 
+    top: 150px;
+    margin-bottom: 50px;
+    align-items: center;
+    font-size: 45px;
+    font-family: 'PT Sans', sans-serif;
+    text-shadow: 0px 0px 5px #5aa5a5ed;
+    color:black;
+}
+
+
+.fav-container{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    align-items: center;
+    align-content: center;
+    background-color: #818484b7;
+    border-radius: 5% 5% 0% 0%;
+    box-shadow: 4px 4px 6px #82a3a3cf ;
+    backdrop-filter: blur(10px);
+}
+
+.fav-items{
+    height: 230px; 
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name-fav{
+    text-align: center ;
+    width: 300px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 3px solid black;
+}
+
+.name-fav:hover{
+    text-shadow: 0px 0px 5px #5aa5a5ed;
+}
+
+.imagen{
+    padding-top: 1px;
+    height: 160px;
+    width: 300px;
+}
+
+
+
+.boton-cruz{
+ width: 20px;
+ display: flex;
+ align-self: flex-end;
+ border: 0px; 
+ background-color: transparent;
+ cursor: pointer;
+}
+
+
+.vacio-div-mylist{
+    position: absolute;
+    background-color: #818484eb;
+    top: 45%;
+    width: 250px;
+    height: 150px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border-radius: 5% ;
+    box-shadow: 4px 4px 8px #82a3a3;
+    backdrop-filter: blur(6px);
+    animation: cambiarAlert2 20s infinite linear;
+}
+
+
+@keyframes cambiarAlert2 {
+    0%{
+    transform: scale(1);
+    }
+    10%{
+     transform: scale(1.2);
+    }
+    20%{
+     transform: scale(1.3);
+    }
+    30%{
+     transform: scale(1.2);
+    }
+    40%{
+     transform: scale(1);
+    }
+    50%{
+     transform: scale(1.2);
+    }
+    60%{
+     transform: scale(1.3);
+    }
+    70%{
+     transform: scale(1.2);
+    }
+    80%{
+     transform: scale(1);
+    }
+    90%{
+     transform: scale(1.2);
+    }
+    100%{
+     transform: scale(1.3);
+    }
+ } 
+
+.vacio-mylist{
+    font-size: 25px;
+    text-align: center;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

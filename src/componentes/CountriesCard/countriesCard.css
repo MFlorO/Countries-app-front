@@ -1,0 +1,180 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+.countries-card-container {
+    backdrop-filter: blur(10px);
+    border-radius: 5%;
+    background-color: #818484b7;
+    box-shadow: 4px 4px 6px #82a3a3cf ;
+    width: 300px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.3s;
+    animation: ease-in;
+}
+
+.countries-card-container:hover{
+    transition-delay: 0s;
+    box-shadow: 0 0 7px #82a3a3cf,
+    0 0 10px #82a3a3cf,
+    0 0 20px #82a3a3cf,
+    0 0 30px #82a3a3cf,
+    0 0 40px #82a3a3cf;
+    transform: translateY(4px);
+}
+
+.countries-card-h3{
+    margin-top: 20px;
+    text-align: center ;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.bandera{
+    border-radius: 8px ;
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.75) ;
+    width: 250px;
+    height: 150px;
+    justify-items: center;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+.countries-card-h4{
+    text-align: center ;
+    font-size: 11px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    padding-top: 8px;
+}
+
+
+.countries-card-1{
+    text-align: center ;
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: lighter;
+    padding: 0;
+}
+
+.favb{
+    left: 255px;
+    top: 280px;
+    position: absolute;
+}
+
+.boton-fav{
+    background-color: transparent;
+    border: 0px ;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+}
+
+
+
+
+
+
+                   /* RESPONSIVEEEEEEEEE */
+
+/* TABLET */
+
+@media screen and (max-width: 760px){ 
+    .countries-card-container{
+        width: 250px;
+        height: 220px;
+    }
+
+    .countries-card-h3{
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    
+    .bandera{
+        width: 150px;
+        height: 100px;
+    }
+
+    .countries-card-h4{
+        font-size: 10px;
+        padding-top: 2px;
+    }
+    
+    
+    .countries-card-1{
+        font-size: 13px;
+    }
+
+    .favb{
+        left: 13rem;
+        top: 10rem;
+    }
+  
+    
+}
+
+
+
+    
+    @media screen and (max-width: 460px) {
+        .countries-card-container{
+            width: 250px;
+            height: 220px;
+            margin-left: 130px;
+            margin-bottom: 10px;
+        }
+    
+ 
+    }
+    
+    
+    
+    @media screen and (max-width: 360px) {
+        .countries-card-container{
+            width: 330px;
+            height: 300px;
+            margin-right: -300px;
+            padding-bottom: 30px;
+        }
+
+        .countries-card-h3{
+            padding-top: 20px;
+            font-size: 20px;
+        }
+        
+        .bandera{
+            width: 200px;
+            height: 150px;
+        }
+    
+        .countries-card-h4{
+            font-size: 15px;
+            padding-top: 5px;
+        }
+        
+        
+        .countries-card-1{
+            font-size: 20px;
+        }
+    
+        .favb{
+            left: 17rem;
+            top: 16rem;
+        }
+    
+
+    }
+    
