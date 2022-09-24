@@ -1,6 +1,6 @@
 
 import axios from "axios"
-
+const baseURL = "https://countriesapp-production.up.railway.app"
 
 
 
@@ -9,7 +9,7 @@ import axios from "axios"
 export function getAllCountries() {
   return function (dispatch) {
    
-    axios.get(`https://country-appp.herokuapp.com/countries/`)
+    axios.get(`${baseURL}/countries/`)
       .then(response => {
         dispatch({
           type: get_All_Countries,
@@ -29,7 +29,7 @@ export function getAllCountries() {
 export function getCountriesName(name) {
   return async function (dispatch) {
     try {
-      let response = await axios.get(`https://country-appp.herokuapp.com/countries?name=${name}`)
+      let response = await axios.get(`${baseURL}/countries?name=${name}`)
       return dispatch({
         type: get_Countries_Name,
         payload: response.data
@@ -47,7 +47,7 @@ export function getCountriesName(name) {
 export function getCountriesDetail(id) {
   return function (dispatch) {
     
-      axios.get(`https://country-appp.herokuapp.com/countries/${id}`)
+      axios.get(`${baseURL}/countries/${id}`)
       .then(response => {
         dispatch({
           type: get_Countries_Detail ,
@@ -68,7 +68,7 @@ export function getCountriesDetail(id) {
 export function createActivities(body) {
   return async function (dispatch) {
     try {
-      await axios.post("https://country-appp.herokuapp.com/activities/", body);
+      await axios.post(`${baseURL}/activities/`, body);
       return dispatch({
         type: create_Activities
       })
@@ -84,7 +84,7 @@ export function createActivities(body) {
 
 export function getActivities() {
   return function (dispatch) {
-      axios.get(`https://country-appp.herokuapp.com/activities/`)
+      axios.get(`${baseURL}/activities/`)
 
       .then(response => {
         dispatch({
@@ -107,7 +107,7 @@ export function getActivities() {
 export function deleteActivities(id) {
   return async function (dispatch) {
     try {
-      await axios.delete(`https://country-appp.herokuapp.com/activities/${id}`);
+      await axios.delete(`${baseURL}/activities/${id}`);
       return dispatch({
         type: delete_activities
       })
@@ -123,7 +123,7 @@ export function deleteActivities(id) {
 export function truncateActivities(id) {
   return async function (dispatch) {
     try {
-      await axios.delete(`https://country-appp.herokuapp.com/activities/`);
+      await axios.delete(`${baseURL}/activities/`);
       return dispatch({
         type: truncate_activities
       })
@@ -141,7 +141,7 @@ export function truncateActivities(id) {
 export function updateActivities() {
   return async function (dispatch) {
     try {
-      await axios.put(`https://country-appp.herokuapp.com/activities/`);
+      await axios.put(`${baseURL}/activities/`);
       return dispatch({
         type: update_activities
       })
