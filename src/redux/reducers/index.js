@@ -121,7 +121,7 @@ export default function rootReducer(state = initialState, action) {
             for (let i = 0; i < countriesAll2.length; i++) {
                 if(countriesAll2[i].activities.length > 0){
                     for (let j = 0; j < countriesAll2[i].activities.length; j++) {
-                        if (countriesAll2[i].activities[j].id == action.payload) {
+                        if (countriesAll2[i].activities[j].id === action.payload) {
                             newArray.push(countriesAll2[i].id)
                             console.log("newArray",newArray)
                         }
