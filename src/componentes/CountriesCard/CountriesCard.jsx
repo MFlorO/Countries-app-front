@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import {addCountriesFavorites}from "../../redux/actions/index.js"
 import "./countriesCard.css"
 import { RiHeartAddFill } from "react-icons/ri"
+import Swal from "sweetalert2";
 
 
 
@@ -17,7 +18,13 @@ export default function CountriesCard({ id, name, image, continent, population})
 
   function onChangeClick(){
     dispatch(addCountriesFavorites({name: name, id: id, image:image}))
-    alert(`ADDED "${name.toUpperCase()}" A MY LIST`)
+    Swal.fire({
+      icon: "success",
+      title: `ADDED "${name.toUpperCase()}" A MY LIST`,
+      showConfirmButton: true,
+      color: "black",
+      confirmButtonColor: "#5aa5a5ed",
+  });
   }
 
   return (
