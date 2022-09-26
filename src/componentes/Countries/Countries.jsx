@@ -20,9 +20,9 @@ export default function Countries({countries, pagina, porpagina}) {
  //[29,38]
 
 
-  console.log("pagina",pagina)
+  // console.log("pagina",pagina)
 
-  console.log("cantidad de pasies por pagina",filterCountriesPagina())
+  // console.log("cantidad de pasies por pagina",filterCountriesPagina())
   
 
 

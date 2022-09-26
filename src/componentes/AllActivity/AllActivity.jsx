@@ -108,7 +108,6 @@ function AllActivity() {
             icon: "success",
           });
           dispatch(truncateActivities());
-          // window.location.reload(); //refresca la pagina despues de borrar
         } else {
           swal("Your activities is safe!");
         }
