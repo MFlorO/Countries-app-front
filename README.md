@@ -51,6 +51,7 @@ npm start
 ## Descripción
 La aplicación tiene como finalidad poder buscar diferentes paises del mundo y entrar al detalle para mas informacion. Ademas, cuenta con un formulario controlado donde puedo crear distintas actividades turisticas y asociarlas a diferentes paises del mundo.
 Cuenta con un CRUD entero con respecto a las actividades turisticas: se pueden crear, editar, eliminar y ver mas informacion de ellas. 
+Los datos de los países los traigo de una API rest (https://restcountries.com) y los guarde en mi propia base de datos.
 
 
 ## Funcionalidades:
