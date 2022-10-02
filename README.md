@@ -82,4 +82,4 @@ La aplicación tiene el frontend en [NETLIFY](https://netlify.com)
 [Link](https://countries-flor.netlify.app) para visitar la app.
 
 
-[![Alt text](https://img.youtube.com/vi/Hc79sDi3f0U/0.jpg)](https://www.youtube.com/watch?v=configuroweb)
+[![Alt text](https://img.youtube.com/vi/BRFmO7j-oV0/0.jpg)](https://www.youtube.com/watch?v=BRFmO7j-oV0)
