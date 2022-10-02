@@ -57,15 +57,15 @@ Los datos de los países los traigo de una API rest (https://restcountries.com) 
 ## Funcionalidades:
 
 - Buscar diferentes paises del mundo
-- Entrar a su detalle y ver informacion sobre el pais seleccionado y las actividades turisticas que tiene asociadas
-- Buscar un pais en la barra de busqueda
-- Filtrar paises por continente, poblacion y actividades
-- Ordenar los paises de la A a la Z o al reves
+- Entrar a su detalle y ver información sobre el pais seleccionado y las actividades turísticas que tiene asociadas
+- Buscar un país en la barra de busqueda
+- Filtrar paises por continente, población y actividades
+- Ordenar los paises de la A a la Z o al revés
 - Recorrer las cards con el paginado
-- Crear una actividad turistica mediante un formulario controlado y asociarla a un pais
-- Editar actividades turisticas
-- Eliminar actividades turisticas
-- Guardar en la seccion de favoritos paises
+- Crear una actividad turistica mediante un formulario controlado y asociarla a un país
+- Editar actividades turísticas
+- Eliminar actividades turísticas
+- Guardar países en la sección de favoritos 
 
 
 <img src = "./public/home.jpg">
@@ -80,7 +80,6 @@ Los datos de los países los traigo de una API rest (https://restcountries.com) 
 La aplicación tiene el frontend en [NETLIFY](https://netlify.com)
 
 [Link](https://countries-flor.netlify.app) para visitar la app.
-
 
 
 [![Alt text](https://img.youtube.com/vi/Hc79sDi3f0U/0.jpg)](https://www.youtube.com/watch?v=configuroweb)
